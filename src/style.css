@@ -1,0 +1,102 @@
+/* GLOBAL STYLES */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 6rem 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #faebd7;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+/* WRAPPER DIV*/
+
+.wrapper {
+  width: 550px;
+  margin: auto;
+}
+
+/* NAV BAR STYLING */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.625rem;
+  width: 100%;
+  background-color: #21222a;
+}
+.navBar__logoContainer {
+  display: flex;
+  align-items: center;
+}
+.navBar__logoContainer-reactLogo {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+.navBar__logoContainer-reactFacts {
+  font-size: 22.5px;
+  font-weight: 700;
+  color: #61dafb;
+}
+.navBar__text {
+  color: #deebf8;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* MAIN STYLES */
+
+.main {
+  background: #282d35 url('./images/backgroundLogo.png') no-repeat top 127px left 25.9375rem;
+  background-size: 263px;
+  color: #ffff;
+  padding: 4rem 4.625rem 7.5rem 1.625rem;
+}
+.main__title {
+  font-size: 39px;
+  margin-bottom: 40px;
+}
+.main__list {
+  padding-inline-start: 40px;
+}
+.main__list > li {
+  display: flex;
+  align-items: center;
+}
+
+.main__list > li::before {
+  content: '\2022';
+  color: #61dafb;
+  margin-left: -17px;
+  font-size: 34px;
+  margin-right: 8px;
+}
+.main__list > li:last-child > span {
+    position: relative;
+    top: 10px;
+}
